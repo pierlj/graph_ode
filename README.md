@@ -29,4 +29,4 @@ python generate_dataset.py
 This generates the springs dataset, use `--simulation charged` for charged particles.
 
 ### Graph ODE
-Encoder ODE GNN is currently in odegnn.py. I forgot putting up the full ODE NRI implementation, will do it on Monday when I have access.
+Encoder ODE GNN with supervised training is in odegnn-supervised.py. The full NRI with continuous time message passing is on odegnn.py, but does not work well (and bugs out the torchdiffeq package if used with adaptive-time solvers).
